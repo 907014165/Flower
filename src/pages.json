@@ -3,14 +3,58 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "花朵测试"
 			}
 		}
-	],
+		,{
+		    "path" : "pages/result/result",
+		    "style" : {
+				"navigationBarTitleText": "结果查看"
+			}
+		}
+	    ,{
+            "path" : "pages/me/me",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+        
+        ,{
+            "path" : "pages/resultList/resultList",
+            "style" : {
+				"navigationBarTitleText": "结果列表"
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/camerapng.png",
+				"selectedIconPath": "static/camera_active.png",
+				"text": "预测"
+			},
+			{
+				"pagePath": "pages/resultList/resultList",
+				"iconPath": "static/result.png",
+				"selectedIconPath": "static/result_active.png",
+				"text": "结果列表"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"iconPath": "static/me.png",
+				"selectedIconPath": "static/me_active.png",
+				"text": "我的"
+			}
+		]
 	}
 }
